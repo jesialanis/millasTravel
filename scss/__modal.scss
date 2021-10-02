@@ -1,0 +1,21 @@
+.modal-contenedor{
+    display: none;
+}
+
+.modal-content {
+    font-family:$fuente-body;
+    font-weight: bold;
+    
+
+
+    .modal-header{
+        font-family: $fuente-millas;
+        letter-spacing: 2px;
+        font-size: 3.25rem;
+        color: black;
+    }
+
+    .modal-footer{
+        font-weight: bold;
+    }
+}

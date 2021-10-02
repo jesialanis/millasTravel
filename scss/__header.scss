@@ -1,0 +1,43 @@
+#mainNav {
+    background-color: #fff !important;
+
+    .nav-link {
+        color: black !important;
+        $fuente-body: "Lato", sans-serif !important;
+    }
+
+    .nav-link:hover {
+        color: #a184a4 !important;
+    }
+}
+
+.header {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #5077b1, #7b86bd, #9e95c7, #bda6d1, #d8b9db);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    
+
+    .header__titulo {
+        font-family: $fuente-millas;
+        letter-spacing: 2px;
+        font-size: 3.25rem;
+        color: black;
+    }
+}
+
+.btn-primary {
+    color: black;
+    background-color: transparent !important;
+    border-color: #a184a4;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    color: #a184a4 !important;
+    background-color: transparent !important;
+    border-color: #a184a4 !important;
+}
