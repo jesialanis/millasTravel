@@ -31,13 +31,14 @@
 }
 
 .btn-primary {
+    font-family: $fuente-body;
     color: black;
     background-color: transparent !important;
-    border-color: #a184a4;
-    font-weight: bold;
+    border-color: transparent;
+    
 }
 .btn-primary:hover {
-    color: #a184a4 !important;
-    background-color: transparent !important;
+    color: black!important;
+    background-color:#a184a4;
     border-color: #a184a4 !important;
 }

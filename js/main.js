@@ -56,38 +56,5 @@ function actualizarCarrito() {
 
 
 
-/*FORMULARIO*/
-document.getElementById("contactForm").addEventListener('submit', enviar);
-let formulario = [];
 
-function enviar(e) {
-    e.preventDefault();
-    /*capturando valores del input*/
-    let nombre = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let celular = document.getElementById('phone').value;
-    let mensaje = document.getElementById('message').value;
-
-    console.log(nombre);
-    console.log(email);
-    console.log(celular);
-    console.log(mensaje);
-
-    let contacto = {
-        nombre,
-        email,
-        celular,
-        mensaje
-    }
-
-    if (localStorage.getItem('contacto') === null) {
-        formulario.push(contacto)
-        localStorage.setItem('contacto', JSON.stringify(formulario));
-    } else {
-        let contacto = JSON.parse(localStorage.getItem('contacto'));
-        formulario.push(contacto)
-        localStorage.setItem('contacto', JSON.stringify(formulario));
-    }
-    document.getElementById('contactForm').reset();
-}
 
