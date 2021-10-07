@@ -125,4 +125,10 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.page-section {
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /*# sourceMappingURL=style.css.map */
