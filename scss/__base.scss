@@ -1,16 +1,49 @@
-$fuente-body: 'Montserrat', sans-serif;
-$fuente-millas: 'Cookie', cursive;
+$fuente-body: "Lato", sans-serif;
+$fuente-millas: "Cookie", cursive;
 
-html{
+html {
     font-family: $fuente-body;
-    color: black;
-       
 }
 
-body{
+body {
     margin: 0;
-  
 }
-h3{
-    font-size:1rem;
+
+.page-section {
+    padding: 6rem 0;
+
+    h2.section-heading {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    h3.section-subheading {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $fuente-body;
+        margin-bottom: 4rem;
+    }
 }
+.btn-primary {
+    color: white;
+    background-color: black;
+    border-color: black;
+    align-items: center;
+    font-family: $fuente-body;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    border-color: #bfa1c2;
+    
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem #bfa1c2;
+    border-radius: 1px;
+}
+
+

@@ -1,12 +1,49 @@
-.section__newsletter{
-    padding-top: 9rem;
+.section__newsletter {
+    padding-top: 2rem;
     padding-bottom: 6rem;
     text-align: center;
-    display: flex; 
+    display: flex;
     align-items: center;
+    background-image: linear-gradient(to bottom, #d1e4ff, #c2c9ec, #b9add5, #b390b9, #ad7498);
 
-    
+    h2.section-heading {
+        color: black;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    h3.section-subheading {
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $fuente-body;
+        margin-bottom: 4rem;
+    }
 }
 
+#newsLetter {
+    font-family: $fuente-body;
+    color: black;
+}
 
+.btn-news {
+    color: black;
+    background-color: transparent;
+    border-color: transparent;
+    align-items: center;
+    font-family: $fuente-body;
+    font-size: 1rem;
+    border-radius: 2px;
+}
 
+.btn-news:hover {
+    color: black;
+    background-color: transparent;
+    border-color: #bfa1c2 !important;
+}
+.btn-news:focus {
+    color: black;
+    box-shadow: 0 0 0 0.25rem white !important;
+    border-radius: 1px;
+}

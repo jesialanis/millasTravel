@@ -1,0 +1,49 @@
+[
+    {
+        "id" : 1,
+        "nombre" :  "Buenos Aires",
+        "precio" : 9500,
+        "descripcion" : "Solo ida",
+        "imagen" :  "/assets/img/buenos-aires.jpg",
+        "cantidad" : 1
+    },
+
+    {
+        "id" : 2,
+        "nombre" :  "Bariloche",
+        "precio" : 12000,
+        "descripcion" : "Vuelo ida y vuelta",
+        "imagen" :  "/assets/img/bariloche.jpg",
+        "cantidad" : 1
+    },
+
+    {
+        "id" : 3,
+        "nombre" :  "Córdoba",
+        "precio" : 5000,
+        "descripcion" : "Solo ida",
+        "imagen" :  "/assets/img/cordoba.jpg",
+        "cantidad" : 1
+    },
+
+    {
+        "id" : 4,
+        "nombre" :  "Salta",
+        "precio" : 10000,
+        "descripcion" : "Vuelo ida y vuelta",
+        "imagen" :  "/assets/img/salta.jpg",
+        "cantidad" : 1
+    },
+
+    {
+        "id" : 5,
+        "nombre" :  "Iguazú",
+        "precio" : 15000,
+        "descripcion" : "Vuelo ida y vuelta",
+        "imagen" :  "/assets/img/iguazu.jpg",
+        "cantidad" : 1
+    }
+
+    
+    
+]

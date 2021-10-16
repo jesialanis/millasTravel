@@ -1,29 +1,33 @@
-.container {
-    h3 {
-        font-family: $fuente-body;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-}
-
-.destino-centertexto{
+.destino-centertexto {
     display: flex;
-    flex-direction:column;
-    align-items:center;
-    padding-top: 9rem;
-    padding-bottom: 6rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+
+    .section-subheading {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $fuente-body;
+        margin-bottom: 2rem;
+    }
 }
 
 #contenedor-productos {
     display: flex;
-    background-color: aqua;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4rem;
 
-    .h3 {
-        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        line-height: 1.2;
-        
+    .card {
+        margin: 1rem;
+        border-radius: 1px;
+
+        .card-body {
+            font-family: $fuente-body;
+        }
     }
-    
+    #btnAgregar {
+        background-color: #a184a4 !important;
+    }
 }

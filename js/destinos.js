@@ -12,18 +12,21 @@ class Destino {
     }
 
 };
+const URLGET = "datos/destinos.json"
+$.getJSON(URLGET, function (respuesta, estado) {
+    let destinos = respuesta;
 
-/* Defino objetos*/
-arrayViajes.push(new Destino(1, "Buenos Aires", 9500, "Solo ida", "/assets/img/buenos-aires.jpg", 1));
-arrayViajes.push(new Destino(2, "Bariloche", 12000, "Vuelo ida y vuelta", "/assets/img/bariloche.jpg", 1));
-arrayViajes.push(new Destino(3, "Córdoba", 5000, "Solo ida", "/assets/img/cordoba.jpg", 1));
-arrayViajes.push(new Destino(4, "Salta", 10000, "Vuelo ida y vuelta", "/assets/img/salta.jpg", 1));
-arrayViajes.push(new Destino(5, "Iguazú", 15000, "Vuelo ida y vuelta", "/assets/img/iguazu.jpg", 1));
+    if (estado === "success") {
+        for (const destino of destinos) {
+            arrayViajes.push(new Destino(destino.id, destino.nombre, destino.precio, destino.descripcion, destino.imagen, destino.cantidad));
+        }
+    }
+})
 
 
 for (let i = 0; i < arrayViajes.length; i++) {
 
-    $("#contenedor-productos").append(`<div class="card" style="width: 18rem;">
+    $("#contenedor-productos").append(`<div class="card" style="width: 30rem;">
                                             <img class="card-img-top" src="${arrayViajes[i].imagen}" alt="Card image cap">
                                             <div class="card-body">
                                                 <h3>  ${arrayViajes[i].nombre} </h3>

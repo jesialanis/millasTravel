@@ -1,9 +1,9 @@
 #mainNav {
-    background-color: #fff !important;
+    background-color: black;
 
     .nav-link {
-        color: black !important;
-        $fuente-body: "Lato", sans-serif !important;
+        color:white;
+        font-family: $fuente-body
     }
 
     .nav-link:hover {
@@ -15,7 +15,7 @@
     padding-top: 10.5rem;
     padding-bottom: 6rem;
     text-align: center;
-    background-image: linear-gradient(to right bottom, #5077b1, #7b86bd, #9e95c7, #bda6d1, #d8b9db);
+    background-image: linear-gradient(to bottom, #d1e4ff, #c2c9ec, #b9add5, #b390b9, #ad7498);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -30,15 +30,3 @@
     }
 }
 
-.btn-primary {
-    font-family: $fuente-body;
-    color: black;
-    background-color: transparent !important;
-    border-color: transparent;
-    
-}
-.btn-primary:hover {
-    color: black!important;
-    background-color:#a184a4;
-    border-color: #a184a4 !important;
-}
