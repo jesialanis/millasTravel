@@ -1,11 +1,22 @@
 .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     color: white;
-    background-color:black;
-    text-align: center;
+    background-color: black;
     font-size: 1rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    
+    padding-right: 61.667px;
+
+    .footer__contacto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h6 {
+            padding-top: 1rem;
+            letter-spacing: 1px;
+        }
+    }
 }

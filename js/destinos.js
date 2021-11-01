@@ -25,7 +25,7 @@ $.getJSON(URLGET, function (respuesta, estado) {
 
 function loadDoc() {
     const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
+    xhttp.onload = function () {
         for (let i = 0; i < arrayViajes.length; i++) {
 
             $("#contenedor-productos").append(`<div class="card" style="width: 30rem;">
@@ -35,7 +35,7 @@ function loadDoc() {
                                                         <p> ${arrayViajes[i].descripcion} </p>
                                                         <b> $ ${arrayViajes[i].precio} </b>
                                                     </div>
-                                                    <button id=boton${arrayViajes[i].id} onclick="agregarAlCarrito(${arrayViajes[i].id})" type="button" class="btn btn-primary ">AGREGAR</button>
+                                                    <button id=boton${arrayViajes[i].id} onclick="agregarAlCarrito(${arrayViajes[i].id})" type="button" class="btn btn-primary ">AGREGAR VIAJE</button>
                                                 </div>`);
         };
     }

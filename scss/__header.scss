@@ -1,32 +1,72 @@
 #mainNav {
-    background-color: black;
+    .titulo {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
+        h1 {
+            font-family: $fuente-millas;
+            font-style: bold;
+            font-size: 1.95rem;
+            color: black;
+        }
+    }
     .nav-link {
-        color:white;
-        font-family: $fuente-body
+        color: black;
+        font-family: $fuente-body;
+        font-size: 1.25em;
+        min-height: 50px;
+        transition: all 0.2s;
     }
 
     .nav-link:hover {
-        color: #a184a4 !important;
+        color: rgb(149, 200, 233);
+    }
+
+    #boton-carrito {
+        background: none;
+        border-color: transparent;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    height: 5rem;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    transition: all 0.3s;
+    animation: mymove 0.3s ease-in;
+
+    @keyframes mymove {
+        from {
+            top: -20px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+
+    .titulo{
+        h1{
+            width: max-content;
+        }
     }
 }
 
 .header {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 11rem;
     text-align: center;
-    background-image: linear-gradient(to bottom, #d1e4ff, #c2c9ec, #b9add5, #b390b9, #ad7498);
+    background-image: url(https://cdn.getyourguide.com/img/location/5d147ae8c6705.jpeg/88.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    
-
-    .header__titulo {
-        font-family: $fuente-millas;
-        letter-spacing: 2px;
-        font-size: 7rem;
-        color: black;
-    }
 }
-

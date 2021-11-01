@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 
     .section-subheading {
         font-size: 1rem;
@@ -21,13 +21,14 @@
 
     .card {
         margin: 1rem;
-        border-radius: 1px;
 
-        .card-body {
-            font-family: $fuente-body;
+        .card-img-top {
+            width: 100%;
+            transition: 0.5s;
         }
-    }
-    #btnAgregar {
-        background-color: #a184a4 !important;
+        .card-img-top:hover {
+            opacity: 0.5;
+            transform: translateY(-1%); /*100%*/
+        }
     }
 }

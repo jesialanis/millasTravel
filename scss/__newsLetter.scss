@@ -4,17 +4,17 @@
     text-align: center;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom, #d1e4ff, #c2c9ec, #b9add5, #b390b9, #ad7498);
+    background-color: black;
 
     h2.section-heading {
-        color: black;
+        color: white;
         font-size: 2rem;
         margin-top: 0;
         margin-bottom: 1rem;
     }
 
     h3.section-subheading {
-        color: black;
+        color: white;
         font-size: 1rem;
         font-weight: 400;
         font-family: $fuente-body;
@@ -28,22 +28,20 @@
 }
 
 .btn-news {
-    color: black;
-    background-color: transparent;
+    color: white;
+    background-color:black;
     border-color: transparent;
     align-items: center;
     font-family: $fuente-body;
     font-size: 1rem;
-    border-radius: 2px;
+    
 }
 
 .btn-news:hover {
-    color: black;
-    background-color: transparent;
-    border-color: #bfa1c2 !important;
+    border-color: rgb(149, 200, 233);
+    
 }
 .btn-news:focus {
-    color: black;
-    box-shadow: 0 0 0 0.25rem white !important;
-    border-radius: 1px;
+    box-shadow: 0 0 0 0.25rem rgb(149, 200, 233);
+    
 }

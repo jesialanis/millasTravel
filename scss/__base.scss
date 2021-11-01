@@ -27,23 +27,15 @@ body {
 }
 .btn-primary {
     color: white;
-    background-color: black;
-    border-color: black;
+    background-color: rgb(149, 200, 233);
+    border-color: transparent;
     align-items: center;
     font-family: $fuente-body;
     font-size: 1rem;
-    border-radius: 2px;
 }
 
 .btn-primary:hover {
-    color: white;
+    color: 0 0 0 0.25rem rgb(149, 200, 233);
     background-color: black;
-    border-color: #bfa1c2;
-    
+    border-color: transparent;
 }
-.btn-primary:focus {
-    box-shadow: 0 0 0 0.25rem #bfa1c2;
-    border-radius: 1px;
-}
-
-

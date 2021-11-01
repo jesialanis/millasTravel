@@ -1,13 +1,13 @@
-/*FORMULARIO*/
+/*Formulario de la seccion contacto*/
 $("#contactForm").submit(enviar);
 let formulario = [];
-const URLPOST   = "https://jsonplaceholder.typicode.com/posts"
+const URLPOST = "https://jsonplaceholder.typicode.com/posts"
 
 
 function enviar(e) {
     e.preventDefault();
     /*capturando valores del input*/
-    let nombre= $("#name").val();
+    let nombre = $("#name").val();
     let email = $("#email").val();
     let celular = $("#phone").val();
     let mensaje = $("#message").val();
@@ -32,13 +32,13 @@ function enviar(e) {
         formulario.push(contacto)
         localStorage.setItem('contacto', JSON.stringify(formulario));
     };
-    
-    $.post(URLPOST, formulario ,(respuesta, estado) => {
-        if(estado === "success"){
-            alert("Tu consulta se ha enviado correctamente");
-     };
+
+    $.post(URLPOST, formulario, (respuesta, estado) => {
+        if (estado === "success") {
+            swal("¡Tu consulta se ha enviado correctamente!");
+        };
     });
-    
+
 
     $("#contactForm").trigger("reset");
 }
