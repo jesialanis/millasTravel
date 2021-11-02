@@ -4,7 +4,7 @@
         "nombre" :  "Buenos Aires",
         "precio" : 9500,
         "descripcion" : "Solo ida",
-        "imagen" :  "/assets/img/buenos-aires.jpg",
+        "imagen" :  "https://github.com/jesialanis/millasTravel/blob/main/assets/img/bariloche.jpg",
         "cantidad" : 1
     },
 
