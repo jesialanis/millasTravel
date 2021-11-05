@@ -1,4 +1,4 @@
-/*Header*/
+/*Animation header*/
 
 $(document).ready(function () {
     var altura = $('.navbar').offset().top;

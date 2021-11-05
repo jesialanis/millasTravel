@@ -14,12 +14,13 @@
         color: black;
         font-family: $fuente-body;
         font-size: 1.25em;
+        font-weight: bold;
         min-height: 50px;
         transition: all 0.2s;
     }
 
     .nav-link:hover {
-        color: rgb(149, 200, 233);
+        color: rgb(66, 102, 126);
     }
 
     #boton-carrito {

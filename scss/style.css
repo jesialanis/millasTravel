@@ -56,13 +56,14 @@ body {
   color: black;
   font-family: "Lato", sans-serif;
   font-size: 1.25em;
+  font-weight: bold;
   min-height: 50px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 #mainNav .nav-link:hover {
-  color: #95c8e9;
+  color: #42667e;
 }
 
 #mainNav #boton-carrito {

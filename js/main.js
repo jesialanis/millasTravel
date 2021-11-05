@@ -32,7 +32,7 @@ function agregarAlCarrito(id) {
         div.classList.add('productoEnCarrito')
         div.innerHTML = `<p>${productoAgregar.nombre}</p>
                         <p> $ ${productoAgregar.precio}</p>
-                        <p id="Cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>
+                        <p id="cantidad${productoAgregar.id}">Cantidad: ${productoAgregar.cantidad}</p>
                         <button id="eliminar${productoAgregar.id}" class="boton-eliminar">Eliminar</button>`
         contenedorCarrito.appendChild(div)
 
@@ -46,7 +46,7 @@ function agregarAlCarrito(id) {
     }
 
 }
-
+/* Funcion actualizar carrito*/
 
 function actualizarCarrito() {
     contadorCarrito.innerText = carritoDeCompras.reduce((acc, el) => acc + el.cantidad, 0);
