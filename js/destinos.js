@@ -28,14 +28,16 @@ function loadDoc() {
     xhttp.onload = function () {
         for (let i = 0; i < arrayViajes.length; i++) {
 
-            $("#contenedor-productos").append(`<div class="card" style="width: 30rem;">
+            $("#contenedor-productos").append(`<div class="card" style="width: 18em;">
                                                     <img class="card-img-top" src="${arrayViajes[i].imagen}" alt="Card image cap">
                                                     <div class="card-body">
                                                         <h3>  ${arrayViajes[i].nombre} </h3>
+                                                        <div class= texto-card>
                                                         <p> ${arrayViajes[i].descripcion} </p>
-                                                        <b> $ ${arrayViajes[i].precio} </b>
+                                                        <p> $     ${arrayViajes[i].precio} </p>
+                                                        </div>
                                                     </div>
-                                                    <button id=boton${arrayViajes[i].id} onclick="agregarAlCarrito(${arrayViajes[i].id})" type="button" class="btn btn-primary ">AGREGAR VIAJE</button>
+                                                    <button id=boton${arrayViajes[i].id} onclick="agregarAlCarrito(${arrayViajes[i].id})" type="button" class="btn btn-primary "> <i class="fas fa-plane"></i></button>
                                                 </div>`);
         };
     }

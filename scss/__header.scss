@@ -1,73 +1,67 @@
-#mainNav {
-    .titulo {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-
-        h1 {
-            font-family: $fuente-millas;
-            font-style: bold;
-            font-size: 1.95rem;
-            color: black;
-        }
-    }
-    .nav-link {
-        color: black;
-        font-family: $fuente-body;
-        font-size: 1.25em;
-        font-weight: bold;
-        min-height: 50px;
-        transition: all 0.2s;
-    }
-
-    .nav-link:hover {
-        color: rgb(66, 102, 126);
-    }
-
-    #boton-carrito {
-        background: none;
-        border-color: transparent;
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    }
-}
-
-.menu-fixed {
-    position: fixed;
-    z-index: 1000;
-    height: 5rem;
-    top: 0;
-    width: 100%;
-    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-    background-color: white;
-    transition: all 0.3s;
-    animation: mymove 0.3s ease-in;
-
-    @keyframes mymove {
-        from {
-            top: -20px;
-        }
-        to {
-            top: 0px;
-        }
-    }
-
-    .titulo{
-        h1{
-            width: max-content;
-        }
-    }
-}
-
 .header {
-    padding-top: 10rem;
-    padding-bottom: 11rem;
-    text-align: center;
-    background-image: url(https://cdn.getyourguide.com/img/location/5d147ae8c6705.jpeg/88.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
+    .navbar {
+        height: 80px;
+        
+        .navbar-brand {
+            
+
+            img {
+                max-width: 170px;
+                max-height: 127px;
+                border-radius: 100%;
+                position: relative;
+                z-index: 100;
+                left: 0.3rem;
+                top: 0.3rem;
+            }
+        }
+
+        .collapse {
+            display: flex;
+            justify-content: flex-end;
+
+            .navbar-nav {
+                font-family: $fuente-body;
+                font-size: 1em;
+            }
+
+            .nav-item {
+                padding-right: 2em;
+            }
+        }
+
+        #boton-carrito {
+            background-color: #f8f9fa;
+            padding: 0.5em;
+            border-radius: 100%;
+            border: transparent;
+
+            a {
+                color: rgba(0, 0, 0, 0.5);
+                font-family: $fuente-body;
+                font-size: 1em;
+            }
+        }
+
+        .menu-fixed {
+            font-family: $fuente-body;
+            position: fixed;
+            z-index: 1000;
+            height: 5rem;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+            animation: mymove 0.3s ease-in;
+
+            @keyframes mymove {
+                from {
+                    top: -20px;
+                }
+                to {
+                    top: 0px;
+                }
+            }
+        }
+    }
 }

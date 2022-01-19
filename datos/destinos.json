@@ -1,49 +1,50 @@
 [
     {
-        "id" : 1,
-        "nombre" :  "Buenos Aires",
-        "precio" : 9500,
-        "descripcion" : "Solo ida",
-        "imagen" :  "https://imgs-akamai.mnstatic.com/d9/82/d9820a70fa57cf2afd487db88b68e5d1.jpg",
-        "Cantidad" : 1
+        "id": 1,
+        "nombre": "Buenos Aires",
+        "precio": 9500,
+        "descripcion": "Solo ida",
+        "imagen": "https://imgs-akamai.mnstatic.com/d9/82/d9820a70fa57cf2afd487db88b68e5d1.jpg",
+        "Cantidad": 1
     },
-
     {
-        "id" : 2,
-        "nombre" :  "Bariloche",
-        "precio" : 12000,
-        "descripcion" : "Vuelo ida y vuelta",
-        "imagen" :  "https://upload.wikimedia.org/wikipedia/commons/5/5e/Llao_llao.jpg",
-        "Cantidad" : 1
+        "id": 2,
+        "nombre": "Bariloche",
+        "precio": 12000,
+        "descripcion": "Vuelo ida y vuelta",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Llao_llao.jpg",
+        "Cantidad": 1
     },
-
     {
-        "id" : 3,
-        "nombre" :  "Córdoba",
-        "precio" : 5000,
-        "descripcion" : "Solo ida",
-        "imagen" :  "https://previews.123rf.com/images/diegograndi/diegograndi1807/diegograndi180700530/105386161-iglesia-de-los-capuchinos-o-iglesia-del-sagrado-coraz%C3%B3n-iglesia-del-sagrado-coraz%C3%B3n-c%C3%B3rdoba-argentin.jpg",
-        "Cantidad" : 1
+        "id": 3,
+        "nombre": "Córdoba",
+        "precio": 5000,
+        "descripcion": "Solo ida",
+        "imagen": "https://previews.123rf.com/images/diegograndi/diegograndi1807/diegograndi180700530/105386161-iglesia-de-los-capuchinos-o-iglesia-del-sagrado-coraz%C3%B3n-iglesia-del-sagrado-coraz%C3%B3n-c%C3%B3rdoba-argentin.jpg",
+        "Cantidad": 1
     },
-
     {
-        "id" : 4,
-        "nombre" :  "Salta",
-        "precio" : 10000,
-        "descripcion" : "Vuelo ida y vuelta",
-        "imagen" :  "https://deih43ym53wif.cloudfront.net/cafayate-salta-argentina-shutterstock_193704581_50e93ff9b4.jpeg",
-        "Cantidad" : 1
+        "id": 4,
+        "nombre": "Salta",
+        "precio": 10000,
+        "descripcion": "Vuelo ida y vuelta",
+        "imagen": "https://deih43ym53wif.cloudfront.net/cafayate-salta-argentina-shutterstock_193704581_50e93ff9b4.jpeg",
+        "Cantidad": 1
     },
-
     {
-        "id" : 5,
-        "nombre" :  "Iguazú",
-        "precio" : 15000,
-        "descripcion" : "Vuelo ida y vuelta",
-        "imagen" :  "https://media.traveler.es/photos/613768f03decec3303bab7da/master/pass/158835.jpg",
-        "Cantidad" : 1
+        "id": 5,
+        "nombre": "Iguazú",
+        "precio": 15000,
+        "descripcion": "Vuelo ida y vuelta",
+        "imagen": "https://media.traveler.es/photos/613768f03decec3303bab7da/master/pass/158835.jpg",
+        "Cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Mendoza",
+        "precio": 3000,
+        "descripcion": "Vuelo ida y vuelta",
+        "imagen": "https://tripin.travel/wp-content/uploads/2020/06/turismo-mendoza-2-web.jpg",
+        "Cantidad": 1
     }
-
-    
-    
 ]

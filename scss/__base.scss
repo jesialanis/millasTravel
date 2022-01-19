@@ -1,41 +1,38 @@
-$fuente-body: "Lato", sans-serif;
-$fuente-millas: "Cookie", cursive;
+/*Fuentes*/
 
-html {
-    font-family: $fuente-body;
-}
+$fuente-body: "Montserrat", sans-serif;
+$fuente-titulos: "Bebas Neue", cursive;
+$fuente-marca: "Antic Didone", serif;
+
+/*Estilos generales*/
 
 body {
-    margin: 0;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fuente-titulos;
 }
 
 .page-section {
-    padding: 6rem 0;
-
-    h2.section-heading {
-        font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
-
-    h3.section-subheading {
-        font-size: 1rem;
-        font-weight: 400;
-        font-family: $fuente-body;
-        margin-bottom: 4rem;
-    }
+  padding-top: 5em;
+  padding-bottom: 2em;
 }
-.btn-primary {
-    color: white;
-    background-color: rgb(149, 200, 233);
-    border-color: transparent;
-    align-items: center;
-    font-family: $fuente-body;
-    font-size: 1rem;
+
+
+.btn-primary:focus {
+  box-shadow:0 0 0 0.2rem #ff9671;
+  border-color: #df5b2b;
+  border-radius: 0%;
 }
 
 .btn-primary:hover {
-    color: 0 0 0 0.25rem rgb(149, 200, 233);
-    background-color: black;
-    border-color: transparent;
+  box-shadow:0 0 0 0.2rem #ff9671;
+  border-color:  #ff9671;
 }

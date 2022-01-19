@@ -1,0 +1,33 @@
+#acercaDe {
+       
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        .container-titulo {
+            background: #ff9671;
+            width: fit-content;
+            height: 19em;
+            padding: 4em 1em 1em;
+
+            .titulo-seccion {
+                font-size: 3.5em;
+                width: 4em;
+            }
+        }
+    }
+
+    .parrafo-acercaDe {
+        padding: 4em;
+        text-align: left;
+
+        h3{
+            font-family: $fuente-marca;
+            
+        }
+        p {
+            font-size: 1em;
+            font-family: $fuente-body;
+        }
+    }
+}
