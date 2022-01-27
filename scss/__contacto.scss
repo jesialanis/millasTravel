@@ -66,12 +66,13 @@
             }
         }
     }
-
-    .btn-enviar {
-        background-color: #000000;
-        color: #ffff;
-        font-family: $fuente-marca;
-        font-size: 1.3em;
-        width: 100%;
+    .text-center {
+        #submitButton {
+            background-color: #000000;
+            color: #ffff;
+            font-family: $fuente-marca;
+            font-size: 1.3em;
+            width: 100%;
+        }
     }
 }

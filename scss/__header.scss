@@ -1,18 +1,16 @@
 .header {
+    margin: 0;
     .navbar {
-        height: 80px;
-        
-        .navbar-brand {
-            
+        height: 6em;
 
+        .navbar-brand {
             img {
                 max-width: 170px;
                 max-height: 127px;
                 border-radius: 100%;
                 position: relative;
                 z-index: 100;
-                left: 0.3rem;
-                top: 0.3rem;
+                top: 0.9em;
             }
         }
 
@@ -31,36 +29,15 @@
         }
 
         #boton-carrito {
-            background-color: #f8f9fa;
+            background-color: #ff9671;
             padding: 0.5em;
             border-radius: 100%;
             border: transparent;
 
             a {
-                color: rgba(0, 0, 0, 0.5);
+                color: #000000;
                 font-family: $fuente-body;
                 font-size: 1em;
-            }
-        }
-
-        .menu-fixed {
-            font-family: $fuente-body;
-            position: fixed;
-            z-index: 1000;
-            height: 5rem;
-            top: 0;
-            width: 100%;
-            box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
-            transition: all 0.3s;
-            animation: mymove 0.3s ease-in;
-
-            @keyframes mymove {
-                from {
-                    top: -20px;
-                }
-                to {
-                    top: 0px;
-                }
             }
         }
     }

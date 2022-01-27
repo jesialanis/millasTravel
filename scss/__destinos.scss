@@ -32,8 +32,9 @@
                     justify-content: space-between;
 
                     p {
-                        font-family: $fuente-titulos;
-                        font-size: 0.9em;
+                        font-family: $fuente-body;
+                        font-size: 1em;
+                        font-weight: bold;
                         color: #000000;
                         padding-right: 1em;
                         padding-left: 1em;
@@ -41,15 +42,48 @@
                 }
             }
 
-            .btn {
-                background-color: transparent;
-                border-color: transparent;
-                color: #000000;
-                border-radius: 0%;
-            }
+            .contenedorBoton {
+                display: flex;
+                justify-content: center;
 
-            .btn:hover{
-                background-color:#ff9671 ;
+                .botonComprar {
+                    width: 100%;
+                    height: 45px;
+                    font-size: 1.2em;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: #000000;
+                    font-family: $fuente-titulos;
+                    position: relative;
+                    transition: all 0.5s;
+                    z-index: 1;
+                }
+
+                .botonComprar::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 5px;
+                    height: 100%;
+                    background-color: #ff9671;
+                    z-index: -1;
+                    transition: all 0.5s;
+                }
+
+                .botonComprar:hover::before {
+                    width: 100%;
+                }
+
+                .botonComprar:hover {
+                    color: black;
+                }
+
+                .botonComprar:active:before {
+                    background: #ff9671;
+                }
             }
         }
     }

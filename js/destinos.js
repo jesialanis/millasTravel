@@ -37,7 +37,10 @@ function loadDoc() {
                                                         <p> $     ${arrayViajes[i].precio} </p>
                                                         </div>
                                                     </div>
-                                                    <button id=boton${arrayViajes[i].id} onclick="agregarAlCarrito(${arrayViajes[i].id})" type="button" class="btn btn-primary "> <i class="fas fa-plane"></i></button>
+                                                    <div class="contenedorBoton">
+                                                    <button id=boton${arrayViajes[i].id} onclick="agregarAlCarrito(${arrayViajes[i].id})" type="button" class="botonComprar" > <i class="fas fa-plane"></i>
+                                                    </button>
+                                                    </div>
                                                 </div>`);
         };
     }

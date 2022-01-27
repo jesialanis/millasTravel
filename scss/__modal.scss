@@ -13,40 +13,65 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
 
     .modal-header {
-        .modal-title {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 2rem;
-            text-align: center;
+        .modal-logo {
+            border-radius: 100%;
+            width: 6.25em;
+            height: 6.25em;
         }
     }
     .modal-body {
         background-color: none;
         color: black;
+        font-family: $fuente-body;
+        font-size: 0.9;
+        padding: 0;
 
         .productoEnCarrito {
+            border-top: 5px;
             display: flex;
             justify-content: space-evenly;
             padding: 1rem;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #000000;
+            
 
             p {
                 width: 8rem;
             }
         }
+
+        .footer-modal{
+            border-bottom: 1px solid #000000;
+            border-top: transparent;
+
+            .precioProducto {
+                font-family: $fuente-titulos;
+                margin-top: 1em;
+                margin-left: 0.6em;
+                
+            }
+        }
+        
     }
 }
-
-.boton-eliminar {
-    color: white;
-    background-color: rgb(149, 200, 233);
-    border-color: transparent;
-    align-items: center;
-    font-family: $fuente-body;
-    font-size: 1rem;
+.btn-primario {
+    background-color: #000000;
+    color: #ffff;
+    font-family: $fuente-marca;
+    font-size: 1em;
 }
 
 .boton-eliminar {
-    color: 0 0 0 0.25rem rgb(149, 200, 233);
-    background-color: black;
-    border-color: transparent;
+    border: 1px solid #ff9671;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: #ff9671;
+    font-family: $fuente-titulos;
+    padding-right: 12px;
+    padding-left: 10px;
+    font-size: 1em;
+}
+.boton-eliminar:hover {
+    background-color: #ff9671;
+    color: #000000;
+    border: 1px solid #ff9671;
 }

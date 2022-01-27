@@ -19,21 +19,12 @@ h6 {
   padding-bottom: 2em;
 }
 
-.btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem #ff9671;
-          box-shadow: 0 0 0 0.2rem #ff9671;
-  border-color: #df5b2b;
-  border-radius: 0%;
-}
-
-.btn-primary:hover {
-  -webkit-box-shadow: 0 0 0 0.2rem #ff9671;
-          box-shadow: 0 0 0 0.2rem #ff9671;
-  border-color: #ff9671;
+.header {
+  margin: 0;
 }
 
 .header .navbar {
-  height: 80px;
+  height: 6em;
 }
 
 .header .navbar .navbar-brand img {
@@ -42,8 +33,7 @@ h6 {
   border-radius: 100%;
   position: relative;
   z-index: 100;
-  left: 0.3rem;
-  top: 0.3rem;
+  top: 0.9em;
 }
 
 .header .navbar .collapse {
@@ -65,49 +55,16 @@ h6 {
 }
 
 .header .navbar #boton-carrito {
-  background-color: #f8f9fa;
+  background-color: #ff9671;
   padding: 0.5em;
   border-radius: 100%;
   border: transparent;
 }
 
 .header .navbar #boton-carrito a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #000000;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
-}
-
-.header .navbar .menu-fixed {
-  font-family: "Montserrat", sans-serif;
-  position: fixed;
-  z-index: 1000;
-  height: 5rem;
-  top: 0;
-  width: 100%;
-  -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-animation: mymove 0.3s ease-in;
-          animation: mymove 0.3s ease-in;
-}
-
-@-webkit-keyframes mymove {
-  from {
-    top: -20px;
-  }
-  to {
-    top: 0px;
-  }
-}
-
-@keyframes mymove {
-  from {
-    top: -20px;
-  }
-  to {
-    top: 0px;
-  }
 }
 
 #destinos #contenedor-productos {
@@ -161,22 +118,62 @@ h6 {
 }
 
 #destinos #contenedor-productos .card .card-body .texto-card p {
-  font-family: "Bebas Neue", cursive;
-  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
   color: #000000;
   padding-right: 1em;
   padding-left: 1em;
 }
 
-#destinos #contenedor-productos .card .btn {
-  background-color: transparent;
-  border-color: transparent;
-  color: #000000;
-  border-radius: 0%;
+#destinos #contenedor-productos .card .contenedorBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#destinos #contenedor-productos .card .btn:hover {
+#destinos #contenedor-productos .card .contenedorBoton .botonComprar {
+  width: 100%;
+  height: 45px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000000;
+  font-family: "Bebas Neue", cursive;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+#destinos #contenedor-productos .card .contenedorBoton .botonComprar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
   background-color: #ff9671;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#destinos #contenedor-productos .card .contenedorBoton .botonComprar:hover::before {
+  width: 100%;
+}
+
+#destinos #contenedor-productos .card .contenedorBoton .botonComprar:hover {
+  color: black;
+}
+
+#destinos #contenedor-productos .card .contenedorBoton .botonComprar:active:before {
+  background: #ff9671;
 }
 
 .modal-contenedor {
@@ -201,18 +198,22 @@ h6 {
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
 }
 
-.modal-content .modal-header .modal-title {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
-  text-align: center;
+.modal-content .modal-header .modal-logo {
+  border-radius: 100%;
+  width: 6.25em;
+  height: 6.25em;
 }
 
 .modal-content .modal-body {
   background-color: none;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9;
+  padding: 0;
 }
 
 .modal-content .modal-body .productoEnCarrito {
+  border-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,28 +221,46 @@ h6 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 .modal-content .modal-body .productoEnCarrito p {
   width: 8rem;
 }
 
-.boton-eliminar {
-  color: white;
-  background-color: #95c8e9;
-  border-color: transparent;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+.modal-content .modal-body .footer-modal {
+  border-bottom: 1px solid #000000;
+  border-top: transparent;
+}
+
+.modal-content .modal-body .footer-modal .precioProducto {
+  font-family: "Bebas Neue", cursive;
+  margin-top: 1em;
+  margin-left: 0.6em;
+}
+
+.btn-primario {
+  background-color: #000000;
+  color: #ffff;
+  font-family: "Antic Didone", serif;
+  font-size: 1em;
 }
 
 .boton-eliminar {
-  color: 0 0 0 0.25rem #95c8e9;
-  background-color: black;
-  border-color: transparent;
+  border: 1px solid #ff9671;
+  border-radius: 5px;
+  background: white;
+  color: #ff9671;
+  font-family: "Bebas Neue", cursive;
+  padding-right: 12px;
+  padding-left: 10px;
+  font-size: 1em;
+}
+
+.boton-eliminar:hover {
+  background-color: #ff9671;
+  color: #000000;
+  border: 1px solid #ff9671;
 }
 
 #news {
@@ -404,7 +423,7 @@ h6 {
   margin-bottom: 1em;
 }
 
-#contacto .btn-enviar {
+#contacto .text-center #submitButton {
   background-color: #000000;
   color: #ffff;
   font-family: "Antic Didone", serif;
@@ -507,5 +526,20 @@ h6 {
 #acercaDe .parrafo-acercaDe p {
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
+}
+
+.swal-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.swal-button {
+  background-color: #ff9671;
+  font-family: "Montserrat", sans-serif !important;
+  border: 1px solid #ff9671;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+.swal-text {
+  font-family: $fuente-body;
+ 
+}
+
+
+.swal-button {
+  background-color: #ff9671;
+  font-family: $fuente-body!important;
+  border: 1px solid #ff9671;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
